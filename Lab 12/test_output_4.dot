@@ -1,0 +1,11 @@
+digraph G {
+    
+    0 -> 1 [label="10", color="green"];
+    0 -> 2 [label="7", color="green"];
+    0 -> 3 [label="9", color="green"];
+    1 -> 4 [label="10", color="blue"];
+    1 -> 5 [label="12", color="blue"];
+    3 -> 6 [label="9", color="blue"];
+    3 -> 7 [label="13", color="blue"];
+    6 -> 8 [label="9", color="red"];
+}

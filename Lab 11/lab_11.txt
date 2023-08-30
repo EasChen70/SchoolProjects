@@ -1,0 +1,28 @@
+What is the big O runtime of insert on a set? A map?
+
+    For a set, insertion takes O(log(n)), where N is the size of the set.
+    For a map, insertion takes O(log(n)) when only element is being inserted, and O(1) when position is also given.
+
+What is the difference between a set and a map?
+
+    A set contains only store keys. In a set, the values are irrelevant.
+    A map contains the data as a key-value pair, so key and value. Also, it stores keys sorted and maps keys to values.
+    To access a value in a set, you use iterators, while to access a value in a map, you use the key to retrieve the associated value. Memory is another big difference,
+    maps typically require more memory than sets because they store key-value pairs rather than just single values.
+
+Why are sets and maps useful?
+
+    Sets are used to get information of an object by providing all the information, usually used to check if the data exists. 
+    A map is used to get the information of an object by using a key (single data).
+    They enforce uniqueness among elements, a set each element only appears once, a map each key must be unique,
+    this can be useful in scenarios where data consistency and correctness are critical, such as in databases or when processing user input.
+    And maps establish relationship between pieces of data, which contributes to fast look up operations, which is useful for different applications, in which data needs to be accessed efficiently.
+
+How many countries currently have confirmed cases of COVID-19? (set methods)
+    There are 190 Countries with confirmed cases of COVID-19 according to the set method.
+
+How many confirmed cases does Kazakhstan currently have? (map methods)
+    Kazakhstan has 110684 confirmed cases of COVID-19
+
+Which country has the most confirmed cases?
+    The country with the most confirmed COVID-19 cases is the United States.

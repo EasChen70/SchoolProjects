@@ -1,0 +1,41 @@
+Question 1. When I jumped to 54,000 the runtime slowed down significantly, from 34,000 to 54,000 the 
+runtime difference was 6 seconds.
+
+Question 2. For Euler2, I put in the max value of 65,535 and it didn't slowdown at all, the run time was
+0.0000 throughout all inputs.
+
+Question 3. Euler2 is faster because it didn't slowdown at all with my inputs like Euler1. Euler1 has a nested
+for loop(more steps), and has a time complexity of O(n^2), and Euler2 is more efficient with a time complexity of O(n).
+
+Question 4. I think Fib algorithm 2 is faster because it's iterative and algorithm 1 is recursive. For iterative,
+you're calling the stack once, whereas with a recursive call you're repeatedly calling the function in the stack.
+
+Question 5. Algorithm 2 is way faster than algorithm 1, because it is iterative, and is called in the stack once
+and completes the task, whereas algorithm 1 is repeatedly being called in the stack until it completes the task.
+
+Question 6. 
+float time_func(uint16_t n, const char *name) {
+uint64_t val;
+    unsigned long c_start, c_end;
+    if (! strcmp(name, "euler1")) {
+        c_start = std::clock();
+        val = euler1(n);
+        c_end = std::clock();
+
+    }
+    else if (! strcmp(name, "euler2")) {
+        c_start = std::clock();
+        val = euler2(n);
+        c_end = std::clock();
+
+    }
+    else{
+        std::cout << "Invalid function call" << std::endl;
+
+    }
+
+    float output = 1.0 * (c_end - c_start) / CLOCKS_PER_SEC;;
+    return output;
+}
+
+Question 7.
