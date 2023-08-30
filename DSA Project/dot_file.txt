@@ -1,0 +1,18 @@
+digraph G {
+
+node0x1b17b4c2560[label="40 "]
+node0x1b17b4a1b20->node0x1b17b4a6f50
+node0x1b17b4a6f50[label="10 "]
+node0x1b17b4a1b20->node0x1b17b4a1b80
+node0x1b17b4a1b80[label="35 "]
+node0x1b17b4c2750->node0x1b17b4a1c00
+node0x1b17b4a1c00[label="50 "]
+node0x1b17b4c2750->node0x1b17b4c24e0
+node0x1b17b4c24e0[label="70 "]
+node0x1b17b4c2750->node0x1b17b4c26f0
+node0x1b17b4c26f0[label="90 100 110 "]
+node0x1b17b4c2560->node0x1b17b4a1b20
+node0x1b17b4a1b20[label="20 "]
+node0x1b17b4c2560->node0x1b17b4c2750
+node0x1b17b4c2750[label="65 80 "]
+}
